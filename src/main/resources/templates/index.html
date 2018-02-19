@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <title>je dis n'importe quoi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../static/css/nimp.css"   th:href="@{/css/nimp.css}" rel="stylesheet" media="screen" />
+    <script type="text/javascript" src="../static/js/recorder.js " th:src="@{/js/recorder.js}"></script>
+    <script type="text/javascript" src="../static/js/nimp.js " th:src="@{/js/nimp.js}"></script>
+</head>
+
+<body>
+<div id="cssgrid">
+    <div id="record" onclick="startRecording(this)">
+<h2>JE PARLE</h2>
+</div>
+<div id="play">
+    <h2>JE DIS N'IMPORTE QUOI </h2>
+    <audio id="lecture" />
+</div>
+</div>
+<div id="nothing"></div>
+</body>
+</html>
